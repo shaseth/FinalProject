@@ -4,7 +4,6 @@ let questions = [
         id: 1,
         question: "What is the Full Form Of RAM?",
         answer:"Random Access Memory",
-        answer:"Run Accept Memory", /*can have more than one answer*/
         options: [
             "Run Accept Memory",
             "Random All Memory",

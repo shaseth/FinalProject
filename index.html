@@ -13,10 +13,11 @@
 
 </head>
 <body>
+    <!-- MAKE SURE TO INCLUDE HIS SOURCE -->
     <!--Materialize CSS for Home Page Design-->
     <nav class="nav-wrapper black">
         <div class="container">
-            <a href="#home.html" class="brand-logo center">QUIZ</a>
+            <a href="#home.html" class="brand-logo center">CHATBOT QUIZ</a>
         </div>
     </nav>
 
@@ -24,7 +25,7 @@
         <div class="row">
             <div class="col s12 l6 offset-l3">
                 <form class="myform" name="id" onsubmit="submitted(event)">
-                <h4 class="center-align white-text">CONTESTENT NAME</h4>
+                <h4 class="center-align white-text">How much do you know?</h4>
             
                 <div class="progress yellow">
                     <div class="indeterminate"></div>
@@ -33,16 +34,16 @@
                 <div class="input-field">
                     <i class="material-icons white-text prefix">account_box</i>
                     <input type="text" class="white-text" id="name">
-                    <label for="name">Name Here</label>
+                    <label for="name">Enter a name</label>
                     <p class="center"><button type="submit" class="btn blue" 
-                        onclick="this.style.display='none'">Submit Name</button></p>
+                        onclick="this.style.display='none'">Choose Name</button></p>
                 </div>
 
                 <div>
                     <p class="white-text green">QUIZ RULES :</p>
-                    <p class="black-text white ">1. YOU CANNOT SKIP ANY QUESTIONS.</p>
-                    <p class="black-text white ">2. YOU CANNOT GO TO PREVIOUS QUESTION.</p>
-                    <p class="black-text white ">3. TRY ATTEMPTING ALL WITHOUT CHEATING.</p>
+                    <p class="black-text white ">1. You cannot skip any questions.</p>
+                    <p class="black-text white ">2. You will not be able to back after submitting an answer (until you're done).</p>
+                    <p class="black-text white ">3. Try your best to answer all questions without cheating.</p>
                 </div>
 
                 <div class="progress yellow">
