@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="canonical" href="https://html5-templates.com/" />
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="script.js"></script>	
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<title>What is a Chatbot? - Final Project Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>QUIZ-GAME -PraRoz Tutorial</title>
+
+    <link rel="stylesheet" href="home.css">
+
 </head>
 <body>
-	<div id="desktop">
-		<div class="window closed" data-title="What is a Chatbot?">
-			Maybe we can put info here or something
-		</div>
-		<div class="window closed" data-title="What can they do?">
-			A quiz in one of these
-		</div>
-		<div class="window closed" data-title="How are they trained?">
-			Third window starts closed, maybe more info or common misconceptions
-		</div>
-		<div class="window fullSizeWindow" data-title="Chatbots: The Way of the Future" >
-			<h1>Words go here... blah blah</h1>
-			<p>Minimize the windows to the taskbar, make them full screen or close them.</p>
-			<p>Drag the title bar to move the windows or resize them from the bottom right corner.</p>
-			<hr/>
-			<p><strong>More information</strong></p>
-		</div>
-		<div class="window closed" data-title="Testing...">
-			<h1>This is a window! I made this!!!!!!</h1>
-			<p>Here are some more words...</p>
-			<hr />
-			<p><strong>AND SOME BOLD WORDS LOOK AT THAT COOL LINE UP THERE^^^^!!!!!!</strong></p>
-		</div>
-		
-		<div id="taskbar">		
-		</div>
-		
-		<div id="icons">
-			<a class="openWindow" data-id="0">What is a Chatbot? - Home -</a>
-			<a class="openWindow" data-id="1">What can they do?</a>
-			<a class="openWindow" data-id="2">How are they trained?</a>
-			<a class="openWindow" data-id="3">Types of Chatbots</a>
-			<a class="openWindow" data-id="4">Ethical Concerns</a>
-		</div>
-		<a href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy; HTML5-Templates.com</a>	
-		<!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
-	</div>
-</body>
+    <!--Materialize CSS for Home Page Design-->
+    <nav class="nav-wrapper black">
+        <div class="container">
+            <a href="#home.html" class="brand-logo center">QUIZ</a>
+        </div>
+    </nav>
 
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 l6 offset-l3">
+                <form class="myform" name="id" onsubmit="submitted(event)">
+                <h4 class="center-align white-text">CONTESTENT NAME</h4>
+            
+                <div class="progress yellow">
+                    <div class="indeterminate"></div>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons white-text prefix">account_box</i>
+                    <input type="text" class="white-text" id="name">
+                    <label for="name">Name Here</label>
+                    <p class="center"><button type="submit" class="btn blue" 
+                        onclick="this.style.display='none'">Submit Name</button></p>
+                </div>
+
+                <div>
+                    <p class="white-text green">QUIZ RULES :</p>
+                    <p class="black-text white ">1. YOU CANNOT SKIP ANY QUESTIONS.</p>
+                    <p class="black-text white ">2. YOU CANNOT GO TO PREVIOUS QUESTION.</p>
+                    <p class="black-text white ">3. TRY ATTEMPTING ALL WITHOUT CHEATING.</p>
+                </div>
+
+                <div class="progress yellow">
+                    <div class="indeterminate"></div>
+                </div>
+
+                <p class="center"><a href="quiz.html" class="btn blue">Let's Start</a></p>
+                
+            </form>
+            </div>
+        </div>
+    </section>
+   
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+<script>
+    function submitted(e){
+        e.preventDefault();
+
+        let namee = document.forms["id"]["name"].value;
+        sessionStorage.setItem("name", namee);
+    }
+</script>
+
+</body>
 </html>

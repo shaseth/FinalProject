@@ -1,5 +1,5 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
+body{line-height:2}
 h1 {font-size: 1.5em;margin-bottom: 10px;}
 p{font-size: 1em;line-height: 1.3em;margin-bottom: 10px;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
@@ -16,6 +16,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 #desktop {
+    line-height: 5;
 	font-family: Verdana, Helvetica, sans-serif;
     position: fixed;
     height: 100%;
@@ -28,6 +29,7 @@ input,select{vertical-align:middle}
     right: 0;
 }
 .window {
+    line-height: 2;
     position: absolute;
     border: 2px solid #000;
     background: #EEE;
@@ -125,11 +127,11 @@ input,select{vertical-align:middle}
 .taskbarPanel {
     display: inline-block;
     border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     line-height: 24px;
     margin: 2px 0 0 10px;
     font-size: 17px;
-    padding: 0 10px;
+    padding: 100px 10px;
     background: #CCC;
     font-weight: bold;
 	cursor: pointer;
@@ -179,6 +181,80 @@ input,select{vertical-align:middle}
     font-size: 15px;
     color: #30478c;
 }
+
+/*Added this myself - sam*/
+/*.panel{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    background-color: #c7dddf;
+    font-size: x-large;
+    text-align: center;
+     
+}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;
+     
+}
+.option-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+    background-color: #9eb1b3;  
+       
+}
+.option{   
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: lightskyblue;
+    border-radius: 25%;
+}
+.option:hover{
+    background-color: lightgoldenrodyellow;
+}
+.navigation{
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#c7dddf;
+}
+ 
+.evaluate,.next{
+    width:30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+}
+.evaluate{
+    background-color: #50DBB4;
+}
+.next{
+    color: white;
+    background-color: #BF3325;
+}*/
+/* end added myself */
+
 
 /*Demo styles BEGIN*/
 #window0 {	top: 20px;	left: 240px;}
