@@ -152,7 +152,7 @@ function toggleActive(){
 
 function next(){
 
-    if(question_count == questions.length -1){
+    if(question_count == questions.length -2){
         location.href = "final.html";
     }
     console.log(question_count);
