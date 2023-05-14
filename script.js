@@ -52,10 +52,14 @@ function minimizeWindow(id){
 function openWindow(id) {
 	if ($('#window' + id).hasClass("minimizedWindow")) {
 		openMinimized(id);
+		$("#window" + id).addClass("fullSizeWindow");
+		adjustFullScreenSize();
 	} else {	
 		makeWindowActive(id);
 		$("#window" + id).removeClass("closed");
 		$("#minimPanel" + id).removeClass("closed");
+		$("#window" + id).addClass("fullSizeWindow");
+		adjustFullScreenSize();
 	}
 }
 function closeWindwow(id) {
@@ -93,8 +97,8 @@ $(document).ready(function(){
 	$("#minimPanel" + (i-1)).addClass('activeTab');
 	$("#window" + (i-1)).addClass('activeWindow');
 	
-	$( ".wincontent" ).resizable();			// resizable -- deleted this feature for now
-	$( ".window" ).draggable({ cancel: ".wincontent" });	// draggable
+	//$( ".wincontent" ).resizable();			// resizable -- deleted this feature for now
+	$( ".window" ).draggable({ cancel: ".wincontent" });	// draggable -- deleted for now
 	
 
     $(".window").mousedown(function(){		// active window on top (z-index 1000)

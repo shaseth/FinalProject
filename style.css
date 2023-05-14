@@ -69,7 +69,7 @@ input,select{vertical-align:middle}
     border: 2px solid #000;
     margin-left: 4px;
     font-size: 19px;
-    padding: 2px 10px;
+    padding: 2px 20px;
     font-family: "Arial Black", Gadget, sans-serif;
     border-radius: 5px;
     line-height: 20px;
@@ -104,9 +104,11 @@ input,select{vertical-align:middle}
 }
 .fullSizeWindow .winmaximize > span:nth-child(1) {
 	margin: 2px 0 0 -4px;
+    display: none; /*added*/
 }
 .fullSizeWindow .winmaximize > span:nth-child(2) {
-    display: inline-block;
+    display: none;
+    /*display: inline-block;*/
     top: 3px;
     left: 12px;
 }
@@ -114,7 +116,7 @@ input,select{vertical-align:middle}
     padding: 10px;
     min-width: 200px;
     min-height: 140px;
-    border: 2px solid #000;
+    border: 0px solid #000;
     margin: 2px;
 	border-radius: 0 0 5px 5px;
 }

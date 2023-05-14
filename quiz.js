@@ -2,124 +2,124 @@
 let questions = [
     {
         id: 1,
-        question: "What is the Full Form Of RAM?",
-        answer:"Random Access Memory",
+        question: "Who wrote this in a summary of The Killers by Hemingway? ''The story's themes include the nature of violence and the concept of courage in the face of danger.''",
+        answer:"ChatGPT",
         options: [
-            "Run Accept Memory",
-            "Random All Memory",
-            "Random Access Memory",
-            "None of these"
+            "ChatGPT",
+            "CliffNotes",
+            "A College Student",
+            "A College Professor"
         ]   
     },
     {
         id: 2,
-        question: "What is the Full-Form of CPU?",
-        answer: "Central Processing Unit",
+        question: "Who wrote this in a summary of The Killers by Hemingway? ''After complaining about the serving schedule, the two men order dinner, joking sarcastically about George and Nick being a couple of dumb country boys.''",
+        answer: "CliffNotes",
         options: [
-          "Central Program Unit",
-          "Central Processing Unit",
-          "Central Preload Unit",
-          "None of these"
-        ]
+          "ChatGPT",
+          "CliffNotes",
+          "A College Student",
+          "A College Professor"
+                  ]
       },
-      /*{
+      {
         id: 3,
-        question: "What is the Full-Form of E-mail",
-        answer: "Electronic Mail",
+        question: "Who wrote this in a recipe for Crepes? ''In a blender, puree flour, sugar, salt, milk, eggs, and butter until smooth, about 30 seconds. Refrigerate for 30 minutes or up to 1 day; stir for a few seconds before using.''",
+        answer: "Martha Stewart",
         options: [
-          "Electronic Mail",
-          "Electric Mail",
-          "Engine Mail",
-          "None of these"
+          "ChatGPT",
+          "An old family recipe",
+          "Martha Stewart",
+          "A College Student"
         ]
       },
       {
         id: 4,
-        question: "'DB' in computer means?",
-        answer: "DataBase",
+        question: "Who wrote this in a recipe for Crepes? ''In a separate bowl, whisk together the eggs, milk, water, and melted butter.''",
+        answer: "ChatGPT",
         options: [
-          "Double Byte",
-          "Data Block",
-          "DataBase",
-          "None of these"
+          "ChatGPT",
+          "An old family recipe",
+          "Martha Stewart",
+          "A College Student"
         ]
       },
       {
         id: 5,
-        question: "What is FMD?",
-        answer: "Fluorescent Multi-Layer Disc",
+        question: "Who wrote this sentence from a short story? ''Francis Macomber was very tall, very well built if you did not mind that length of bone, dark, his hair cropped like an oarsman, rather thin-lipped, and was considered handsome.''",
+        answer: "Ernest Hemingway",
         options: [
-          "Fluorescent Multi-Layer Disc",
-          "Flash Media Driver",
-          "Fast-Ethernet Measuring Device",
-          "None of these"
+          "ChatGPT",
+          "A College Student",
+          "Ernest Hemingway",
+          "A monkey with a typewriter"
         ]
       },
       {
         id: 6,
-        question: "How many bits is a byte?",
-        answer: "8",
+        question: "Who wrote this sentence from a short story? ''He was a tall man, with broad shoulders and a chiseled jawline that spoke to his wealth and power.''",
+        answer: "ChatGPT",
         options: [
-          "32",
-          "16",
-          "8",
-          "64"
+          "ChatGPT",
+          "A College Student",
+          "Ernest Hemingway",
+          "A monkey with a typewriter"
         ]
       },
       {
         id: 7,
-        question: "A JPG stands for:",
-        answer: "A format for an image file",
+        question: "Who provided me with this collection of 5 random words? ''Hill, Pineapple, Unique, Green, Panther.''",
+        answer: "5 College Students",
         options: [
-          "A format for an image file",
-          "A Jumper Programmed Graphic",
-          "A type of hard disk",
-          "A unit of measure for memory"
+          "ChatGPT",
+          "A College Professor",
+          "5 College Students",
+          "Martha Stewart"
         ]
       },
       {
         id: 8,
-        question: "Which was an early mainframe computer?",
-        answer: "ENIAC",
+        question: "Who provided me with this collection of 5 random words? ''Seahorse, Pencil, Firecracker, Tiramisu, Telescope.''",
+        answer: "ChatGPT",
         options: [
-          "ENIAC",
-          "EDVAC",
-          "UNIC",
-          "ABACUS"
+          "ChatGPT",
+          "A College Professor",
+          "5 College Students",
+          "Earnest Hemingway"
         ]
       },
       {
         id: 9,
-        question: "Main circuit board in a computer is:",
-        answer: "Mother board",
+        question: "The key component of a Chatbot is to...?",
+        answer: "Predict the next word/sentence",
         options: [
-          "Harddisk",
-          "Mother board",
-          "Microprocessor",
+          "Think, feel, and express itself",
+          "Write essays",
+          "Predict the next word/sentence",
           "None of these"
         ]
       },
       {
         id: 10,
-        question: "ISP stands for:",
-        answer: "Internet Service Provider",
+        question: "Do you rock?",
+        answer: "I rock!!!",
         options: [
-          "Internet Survey Period",
-          "Integreted Service Provider",
-          "Internet Security Protocol",
-          "Internet Service Provider"
+          "I rock!!!",
+          "I rock!!!",
+          "I rock!!!",
+          "I rock!!!"
           
         ]
-      }*/,
+      },
 ];
 
 let question_count = 0;
 let points = 0;
-let total = 0;
 
 
 window.onload = function(){
     show(question_count);
+    let points = 0;
 };
 
 function show(count){
@@ -152,7 +152,7 @@ function toggleActive(){
 
 function next(){
 
-    if(question_count == questions.length -2){
+    if(question_count == questions.length -1){
         location.href = "final.html";
     }
     console.log(question_count);
