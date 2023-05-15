@@ -97,8 +97,8 @@ $(document).ready(function(){
 	$("#minimPanel" + (i-1)).addClass('activeTab');
 	$("#window" + (i-1)).addClass('activeWindow');
 	
-	$( ".wincontent" ).resizable();			// resizable -- deleted this feature for now
-	$( ".window" ).draggable({ cancel: ".wincontent" });	// draggable -- deleted for now
+	$( ".wincontent" ).resizable();			// resizable
+	$( ".window" ).draggable();	// draggable -- took out { cancel: ".wincontent" } so that any part of the window is draggable. SH
 	
 
     $(".window").mousedown(function(){		// active window on top (z-index 1000)
