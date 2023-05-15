@@ -81,7 +81,7 @@ body{
 .btn-next{
     border: 2px solid #000000;
     padding: 15px 50px;
-    background-color: #34C310;
+    background-color: limegreen;
     color: #fff;
     border-radius: 50px;
     transition: 0.4s all;
@@ -89,7 +89,7 @@ body{
 
 .btn-next:hover{
     cursor: pointer;
-    background-color: greenyellow;
+    background-color: lightgreen;
     color: #000;
 }
 
