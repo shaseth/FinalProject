@@ -97,7 +97,7 @@ $(document).ready(function(){
 	$("#minimPanel" + (i-1)).addClass('activeTab');
 	$("#window" + (i-1)).addClass('activeWindow');
 	
-	//$( ".wincontent" ).resizable();			// resizable -- deleted this feature for now
+	$( ".wincontent" ).resizable();			// resizable -- deleted this feature for now
 	$( ".window" ).draggable({ cancel: ".wincontent" });	// draggable -- deleted for now
 	
 

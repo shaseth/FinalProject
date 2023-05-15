@@ -22,7 +22,7 @@ input,select{vertical-align:middle}
     height: 100%;
     width: 100%;
     background: #CCC;
-	overflow: hidden;
+	overflow: auto;
     top: 0;
     bottom: 0;
     left: 0;
@@ -104,11 +104,11 @@ input,select{vertical-align:middle}
 }
 .fullSizeWindow .winmaximize > span:nth-child(1) {
 	margin: 2px 0 0 -4px;
-    display: none; /*added*/
+    /*display: none; /*added*/
 }
 .fullSizeWindow .winmaximize > span:nth-child(2) {
-    display: none;
-    /*display: inline-block;*/
+    /*display: none;*/
+    display: inline-block;
     top: 3px;
     left: 12px;
 }
@@ -151,7 +151,7 @@ input,select{vertical-align:middle}
 	display: none;
 }
 #taskbar {
-	position: absolute;
+	position: fixed;
 	height: 32px;
 	border-top: 2px solid #000;
 	bottom: 0;
@@ -168,7 +168,7 @@ input,select{vertical-align:middle}
 #icons a {
     display: block;
     cursor: pointer;
-    padding: 2px 10px;
+    padding: 40px 10px;
 }
 #icons a:hover {
 	background: #000;
@@ -183,79 +183,6 @@ input,select{vertical-align:middle}
     font-size: 15px;
     color: #30478c;
 }
-
-/*Added this myself - sam*/
-/*.panel{
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.question-container{
-    margin: 10px;
-    padding: 5px;
-    width: 80vw;
-    height: 10vh;
-    background-color: #c7dddf;
-    font-size: x-large;
-    text-align: center;
-     
-}
-.result{
-    margin: 10px;
-    padding: 5px;
-    width:80vw;
-    height: 10vh;
-    text-align: center;
-    font-size: 50px;
-     
-}
-.option-container{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    padding: 5px;
-    width: 80vw;
-    height: 20vh;
-    background-color: #9eb1b3;  
-       
-}
-.option{   
-    padding: 10px;
-    width: 15vw;
-    height: 10vh;
-    font-size: larger;
-    background-color: lightskyblue;
-    border-radius: 25%;
-}
-.option:hover{
-    background-color: lightgoldenrodyellow;
-}
-.navigation{
-    width: 80vw;
-    height: 10vh;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    background-color:#c7dddf;
-}
- 
-.evaluate,.next{
-    width:30vw;
-    height: 8vh;
-    padding: 5px;
-    font-size: larger;
-}
-.evaluate{
-    background-color: #50DBB4;
-}
-.next{
-    color: white;
-    background-color: #BF3325;
-}*/
-/* end added myself */
 
 
 /*Demo styles BEGIN*/

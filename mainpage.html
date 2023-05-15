@@ -15,14 +15,12 @@
 		div.wincontent {
 			overflow: auto;
 		}
-		div.windowHeader .winmaximize {
-			display: none;
-		}
+		
 	</style>
 </head>
-<body>
+<body>	
 	<div id="desktop">
-
+		<p style="line-height: 4; text-align: right;" rel="nofollow" target="_blank" href="https://html5-templates.com/" id="templateLink">&copy;HTML5-Templates.com</p>
 		<!-- Window 0 -->
 		<div class="window fullSizeWindow" data-title="Home">
 			<h1>Thank you for participating in our quiz!</h1>
@@ -31,9 +29,6 @@
 			<hr/>
 			<p><strong>For more information</strong></p>
 			Feel free to browse our site. Simply close out of or minimize this window to see all the topics!
-			<a href="index.html">
-                <button class="button">Click here to go back to the quiz!</button>
-            </a>
 			<hr/>
 			<h1>What are chatbots?</h1>
 			<p> 
@@ -196,27 +191,25 @@
 		</div>
 
 		<!-- Window 5 -->
-		<div class="window closed" data-title="Back to Quiz">
-
-			<button class="button">Click here to go back to the quiz!</button>
-
-		</div>
+		<a href="index.html">
+			<div class="window closed" data-title="Back to Quiz" style="display:none;" onclick="window.open('index.html');">
+			</div>
+		</a>
 
 
 		
 		<div style="line-height: 0" id="taskbar">		
 		</div>
 		
-		<div id="icons" style="line-height: 7">
+		<div id="icons" style="line-height: 1">
 			<a class="openWindow" data-id="0">What is a Chatbot? - Home -</a>
 			<a class="openWindow" data-id="1">What Can They Do?</a>
 			<a class="openWindow" data-id="2">How Are They Trained?</a>
 			<a class="openWindow" data-id="3">Types of Chatbots</a>
 			<a class="openWindow" data-id="4">Ethical Concerns</a>
-			<a class="openWindow" data-id="5">Back to Quiz</a>
+			<a href="index.html" style="text-decoration: none; color: blue;" onmouseover="">Back to Quiz</a>
 		</div>
-		<p style="line-height: 0" href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy;HTML5-Templates.com</p>	
-		<!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
+			
 	</div>
 </body>
 
